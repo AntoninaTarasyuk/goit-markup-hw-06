@@ -167,17 +167,18 @@ ul .current {
   text-transform: uppercase;
 }
 /* Кнопка на баннере */
-.banner-btn {
+.main-btn {
   padding: 10px 32px;
 
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--dark-bg-text-color);
 
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px;
   border-radius: 4px;
 
@@ -185,8 +186,8 @@ ul .current {
 
   transition: background-color var(--transition-time) var(--time-function);
 }
-.banner-btn:hover,
-.banner-btn:focus {
+.main-btn:hover,
+.main-btn:focus {
   background-color: #188ce8;
 }
 
@@ -465,6 +466,7 @@ ul .current {
 }
 .footer .logo {
   padding: 0;
+  margin-bottom: 20px;
 }
 .logo-decor-footer {
   color: var(--dark-bg-text-color);
@@ -473,7 +475,6 @@ ul .current {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -497,17 +498,15 @@ ul .current {
 }
 .join {
   margin-left: 70px;
+  margin-right: 93px;
 }
-.join-title {
-  margin: 0;
+.footer-title {
+  margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: var(--dark-bg-text-color);
   text-transform: uppercase;
-}
-.join-list {
-  margin-top: 20px;
 }
 .join-item:not(:last-child) {
   margin-right: 10px;
@@ -521,6 +520,17 @@ ul .current {
 .join-item .social-link:hover,
 .join-item .social-link:focus {
   background-color: var(--accent-color);
+}
+.subscribe-input {
+  width: 358px;
+  padding: 15px 16px;
+  font-size: 16;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--footer-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 
 /* Прячет то, что нужно спрятать :) */
@@ -563,13 +573,15 @@ ul .current {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  min-width: 528px;
+  padding: 40px 40px;
+  width: 528px;
   min-height: 581px;
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  /* text-align: center; */
   transition: transform var(--transition-time) var(--time-function);
 }
 .close {
@@ -595,4 +607,29 @@ ul .current {
 .close:hover,
 .close:focus {
   color: var(--accent-color);
+}
+.modal-title {
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.modal-form {
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-input {
+  padding: 14px 15px;
+}
+.form-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
