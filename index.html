@@ -388,8 +388,13 @@
       </div>
       <div class="subscription">
         <p class="footer-title">Подпишитесь на рассылку</p>
-        <input type="email" class="subscribe-input" placeholder="E-mail">
-        <button type="submit" class="main-btn">Подписаться</button>
+        <input type="email" class="subscribe-input" placeholder="E-mail" autocomplete="on">
+        <button type="submit" class="main-btn">
+          Подписаться
+          <svg class="send-icon" width="24px" height="24px">
+            <use href="./images/sprite.svg#send-icon"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </footer>
@@ -406,28 +411,52 @@
         <div class="form-field">
           <label class="form-label" for="name">Имя</label>
           <input class="form-input" type="text" name="name" id="name">
+          <svg class="form-icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#person"></use>
+          </svg>
         </div>
         <div class="form-field">
           <label class="form-label" for="tel">Телефон</label>
           <input class="form-input" type="tel" name="tel" id="tel">
+          <svg class="form-icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#phone"></use>
+          </svg>
         </div>
         <div class="form-field">
           <label class="form-label" for="mail">Почта</label>
           <input class="form-input" type="email" name="mail" id="mail">
+          <svg class="form-icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#email"></use>
+          </svg>
         </div>
         <div class="form-field">
           <label class="form-label" for="comment">Комментарий</label>
-          <textarea class="form-input" name="comment" id="comment" cols="30" rows="10" autocomplete="off" placeholder="Введите текст"></textarea>
+          <textarea class="form-input form-comment" name="comment" id="comment" rows="5" autocomplete="off" placeholder="Введите текст"></textarea>
         </div>
       </form>
-        <div>
-          <input type="checkbox" name="agreement" id="agreement">
-          <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-        </div>
+        <div class="agreement-box">
+          <label class="form-label-agreement" for="agreement">
+            <input class="checkbox" type="checkbox" name="agreement" id="agreement">
+            <svg class="checkbox-icon" width="16px" height="15px">
+              <use href="./images/sprite.svg#check-1"></use>
+            </svg>
+            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+          </label>
         <button type="submit" class="main-btn">Отправить</button>
-      
+        </div>
     </div>
   </div>
   <script src="./js/modal.js"></script>
 </body>
 </html>
+
+
+
+  <div class="form-checkbox">
+    <input class="checkbox" type="checkbox" name="agreement" id="agreement">
+    <svg class="checkbox-icon" width="16px" height="15px">
+      <use href="./images/sprite.svg#check-1"></use>
+    </svg>
+    <label class="form-label-agreement" for="agreement">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+        договора</a></label>
+  </div>
